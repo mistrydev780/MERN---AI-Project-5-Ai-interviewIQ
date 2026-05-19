@@ -26,6 +26,7 @@
     "pdf-parse-fixed": "^1.1.1",
     "pdf2json": "^4.0.3",
     "pdfjs-dist": "^3.4.120",
-    "razorpay": "^2.9.6"
+    "razorpay": "^2.9.6",
+    "tesseract.js": "^7.0.0"
   }
 }
