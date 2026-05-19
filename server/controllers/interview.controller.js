@@ -2,7 +2,7 @@ import fs from "fs";
 
 import path from "path";
 
-import pdfPoppler from "pdf-poppler";
+import pdf from "pdf-parse";
 
 import Tesseract from "tesseract.js";
 
@@ -33,38 +33,14 @@ export const analyzeResume = async (req, res) => {
       });
     }
 
-    // ================= PDF TO IMAGE =================
-    const options = {
-      format: "png",
-      out_dir: outputDir,
-      out_prefix: "resume",
-      page: null,
-    };
+   const dataBuffer = fs.readFileSync(filepath);
 
-    await pdfPoppler.convert(
-      filepath,
-      options
-    );
+const pdfData = await pdf(dataBuffer);
 
-    // ================= GET IMAGE FILE =================
-    const imagePath =
-      path.join(
-        outputDir,
-        "resume-1.png"
-      );
-
-    // ================= OCR =================
-    const result =
-      await Tesseract.recognize(
-        imagePath,
-        "eng"
-      );
-
-    const resumeText =
-      result.data.text
-        ?.replace(/\r\n/g, " ")
-        ?.replace(/\s+/g, " ")
-        ?.trim();
+const resumeText = pdfData.text
+  ?.replace(/\r\n/g, " ")
+  ?.replace(/\s+/g, " ")
+  ?.trim();
 
     console.log(
       "RESUME TEXT:",
@@ -137,9 +113,7 @@ ${resumeText}
       await fs.promises.unlink(filepath);
     }
 
-    if (fs.existsSync(imagePath)) {
-      await fs.promises.unlink(imagePath);
-    }
+   
 
     // ================= RESPONSE =================
     return res.json({
