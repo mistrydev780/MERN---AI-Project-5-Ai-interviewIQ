@@ -10,7 +10,7 @@ import InterviewHistory from "./pages/InterviewHistory";
 import Pricing from "./pages/Pricing";
 import InterviewReport from "./pages/InterviewReport";
 
-export const serverURL = "http://localhost:8000";
+export const serverURL = "https://mern-ai-project-5-ai-interviewiq.onrender.com";
 
 function App() {
   const dispatch = useDispatch();
