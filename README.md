@@ -6,7 +6,7 @@ An AI-powered MERN stack interview preparation platform that helps users analyze
 
 ## 🌐 Live Demo
 
-🔗 https://your-live-demo-url.onrender.com
+🔗 https://ai2interviewiq-client.onrender.com/
 
 ---
 
