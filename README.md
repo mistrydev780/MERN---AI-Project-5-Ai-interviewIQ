@@ -1,101 +1,140 @@
-# 🚀 AI InterviewIQ Platform
+# 🤖 AI InterviewIQ Platform
 
-An AI-powered MERN stack interview preparation platform that helps users analyze resumes, generate interview questions, evaluate answers using AI, and improve interview performance.
-
----
-
-## 🌐 Live Demo
-
-🔗 https://ai2interviewiq-client.onrender.com/
-
----
-
-## ✨ Features
-
-* 🔐 JWT Authentication & Authorization
-* 📄 Resume Upload & Analysis
-* 🤖 AI Interview Question Generation
-* 🧠 AI Answer Evaluation & Feedback
-* 📊 Interview Scoring System
-* 💳 Credit-Based Usage System
-* 📁 File Upload Support
-* 🎨 Modern Responsive UI
-* ⚡ Real-Time User Experience
+<p align="center">
+  <img src="https://img.shields.io/badge/MERN-Stack-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Backend-Node.js-black?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Database-MongoDB-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AI-Powered-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Deploy-Render-black?style=for-the-badge" />
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+# 🚀 AI-Powered Interview Preparation Platform
 
-### Frontend
+AI InterviewIQ is a modern AI-powered interview preparation platform built using the MERN stack with Resume Analysis, AI-generated Interview Questions, AI Answer Evaluation, Scoring System, Feedback System, and modern responsive UI.
 
-* React.js
-* Tailwind CSS
-* Redux Toolkit
-* Axios
-* Framer Motion
-
-### Backend
-
-* Node.js
-* Express.js
-* MongoDB
-* JWT Authentication
-* Multer
-
-### AI Integration
-
-* OpenRouter API
-* Gemini / OpenAI Models
+This platform helps students and developers prepare for technical interviews with AI-powered mock interview experiences.
 
 ---
 
-## 📂 Project Structure
+# 🌐 Live Demo
+
+## 🔗 Frontend
+
+https://ai2interviewiq-client.onrender.com/
+
+---
+
+
+# 📌 Overview
+
+AI InterviewIQ Platform is a full-stack AI interview preparation application designed to simulate real-world technical interviews using artificial intelligence.
+
+The platform provides:
+
+- AI-generated interview questions
+- Resume analysis
+- AI answer evaluation
+- Interview scoring system
+- Personalized feedback
+- Modern dashboard
+- Responsive UI design
+
+The application is designed with scalability, performance, and modern SaaS-style architecture.
+
+---
+
+# ✨ Features
+
+# 👤 User Features
+
+- 🔐 Secure Authentication
+- 📄 Resume Upload
+- 🤖 AI Interview Question Generation
+- 💬 AI Answer Evaluation
+- 📊 Interview Score System
+- 📝 Personalized Feedback
+- ⚡ Real-Time Experience
+- 📱 Fully Responsive Design
+- 🎨 Modern UI/UX
+
+---
+
+# 🛠️ Dashboard Features
+
+- 📊 User Dashboard
+- 📄 Resume Analysis Reports
+- 🧠 AI Interview Tracking
+- 📈 Performance Monitoring
+- 📝 Interview History
+- ⚙️ User Profile Management
+
+---
+
+# 🤖 AI Features
+
+- 🧠 AI Resume Analysis
+- 💬 AI Interview Questions
+- 📊 AI Interview Scoring
+- 🎯 Personalized Feedback
+- ⚡ Real-Time Evaluation
+- 📄 Resume Parsing
+- 🔥 AI-Powered Mock Interviews
+
+---
+
+# 🛠️ Tech Stack
+
+# Frontend
+
+- React.js
+- Redux Toolkit
+- Tailwind CSS
+- Axios
+- React Router DOM
+- Framer Motion
+
+---
+
+# Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication
+- Multer
+- REST API
+
+---
+
+# AI Integration
+
+- OpenAI API
+- Gemini API
+- OpenRouter API
+
+---
+
+# Database
+
+- MongoDB Atlas
+
+---
+
+# Deployment
+
+- Frontend → Vercel
+- Backend → Render
+- Database → MongoDB Atlas
+
+---
+
+# 📂 Folder Structure
 
 ```bash
 client/
 server/
-```
-
----
-
-## ⚙️ Installation
-
-### Clone Repository
-
-```bash
-git clone https://github.com/mistrydev780/MERN---AI-Project-5-Ai-interviewIQ.git
-```
-
-### Install Dependencies
-
-```bash
-cd client
-npm install
-
-cd ../server
-npm install
-```
-
-### Run Project
-
-```bash
-npm run dev
-```
-
----
-
-## 📸 Screenshots
-
-Add your screenshots here.
-
----
-
-## 👨‍💻 Author
-
-Dev Jangid
-
----
-
-## ⭐ Support
-
-If you like this project, give it a star ⭐
+components/
+pages/
